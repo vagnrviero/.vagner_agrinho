@@ -1,0 +1,119 @@
+:root {
+    --verde-principal: #1b5e20;
+    --verde-claro: #4caf50;
+    --bg-site: #f1f8e9;
+    --texto: #263238;
+    --branco: #ffffff;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-site);
+    color: var(--texto);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(135deg, var(--verde-principal) 0%, #0d3c12 100%);
+    color: var(--branco);
+    padding: 3rem 1rem;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header h1 span {
+    color: var(--verde-claro);
+}
+
+header p {
+    margin: 0.5rem 0 0 0;
+    opacity: 0.9;
+}
+
+.container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+@media (max-width: 768px) {
+    .container { grid-template-columns: 1fr; }
+}
+
+.card {
+    background: var(--branco);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    border-top: 5px solid var(--verde-principal);
+}
+
+.card h2 {
+    font-size: 1.3rem;
+    color: var(--verde-principal);
+    margin-top: 0;
+}
+
+.grupo-input {
+    margin: 1.5rem 0;
+}
+
+.grupo-input label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.grupo-input input, .grupo-input select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+.btn {
+    width: 100%;
+    background-color: var(--verde-principal);
+    color: var(--branco);
+    border: none;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn:hover {
+    background-color: #113b14;
+}
+
+.btn-secundario {
+    background-color: #00796b;
+}
+
+.btn-secundario:hover {
+    background-color: #004d40;
+}
+
+.resultado-box {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    display: none;
+    background-color: #f5f5f5;
+    border-left: 4px solid #ccc;
+}

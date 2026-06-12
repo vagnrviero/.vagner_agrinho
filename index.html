@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroFácil Sustentável - Agrinho</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <h1>AgroFácil <span>Sustentável</span></h1>
+            <p>Tecnologia simples para apoiar quem alimenta o nosso futuro.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="card">
+            <h2>🧮 Calculadora de Adubação Inteligente</h2>
+            <p>Insira a área do seu plantio para calcular a dosagem ecológica recomendada.</p>
+            
+            <div class="grupo-input">
+                <label for="area">Tamanho da Área (em Hectares):</label>
+                <input type="number" id="area" placeholder="Ex: 5" min="1">
+            </div>
+            
+            <button class="btn" onclick="calcularInsumos()">Calcular Insumos Eficientes</button>
+            <div id="resultado-calculo" class="resultado-box"></div>
+        </section>
+
+        <section class="card">
+            <h2>🐛 Identificador de Manejo Biológico</h2>
+            <p>Selecione o sintoma ou praga detectada na sua lavoura:</p>
+            
+            <div class="grupo-input">
+                <label for="praga">O que está afetando a plantação?</label>
+                <select id="praga">
+                    <option value="lagarta">Lagartas nas folhas</option>
+                    <option value="percevejo">Percevejos sugadores</option>
+                    <option value="seca">Folhas amareladas / Seca precoce</option>
+                </select>
+            </div>
+            
+            <button class="btn btn-secundario" onclick="identificarManejo()">Ver Solução Sustentável</button>
+            <div id="resultado-manejo" class="resultado-box"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
